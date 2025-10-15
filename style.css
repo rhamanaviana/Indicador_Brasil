@@ -1,0 +1,227 @@
+/* Estilos globais */
+:root {
+    --primary-color: #004d9c;
+    --secondary-color: #e6f2ff;
+    --background-color: #f0f4f7;
+    --card-background: #ffffff;
+    --text-color: #333;
+    --error-color: #e74c3c;
+    --info-color: #007bff;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+main {
+    flex: 1;
+    padding: 2rem 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tabs {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tab-btn {
+    padding: 0.75rem 1.2rem;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s;
+    font-size: 0.9rem;
+}
+
+.tab-btn.active {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.tab-btn:hover:not(.active) {
+    background-color: #d1e1f1;
+}
+
+.date-picker {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#date-input, #search-btn {
+    padding: 0.75rem;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+}
+
+#search-btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+#content-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.data-card {
+    flex: 1 1 350px;
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+}
+
+.data-card h2 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.data-card .value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #28a745;
+}
+
+.data-card .date {
+    font-size: 0.9rem;
+    opacity: 0.6;
+    margin-top: 0.5rem;
+}
+
+#converter-card {
+    display: none;
+}
+
+#converter-card input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    text-align: center;
+}
+
+#graph-container {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+#graph-title {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.info-message, .error-message {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.info-message {
+    color: var(--info-color);
+}
+
+.error-message {
+    color: var(--error-color);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    opacity: 0.9;
+    margin-top: auto;
+}
+
+/* Media Query para telas maiores */
+@media (min-width: 768px) {
+    .tabs, .date-picker {
+        justify-content: flex-start;
+    }
+
+    .tab-btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .data-card h2 {
+        font-size: 1.8rem;
+    }
+
+    .data-card .value {
+        font-size: 2.5rem;
+    }
+
+    .data-card .date {
+        font-size: 1rem;
+    }
+
+    #graph-title {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indicadores Econômicos do Brasil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Indicadores Econômicos do Brasil</h1>
+        <p>Dados do Banco Central em um só lugar</p>
+    </header>
+
+    <main>
+        <div class="controls">
+            <div class="tabs">
+                <button class="tab-btn active" data-serie="1" data-label="Dólar" data-unit="R$">Dólar (USD)</button>
+                <button class="tab-btn" data-serie="1178" data-label="Taxa Selic" data-unit="%">Taxa Selic</button>
+                <button class="tab-btn" data-serie="433" data-label="IPCA" data-unit="%">IPCA</button>
+            </div>
+            <div class="date-picker">
+                <label for="date-input">Buscar por data:</label>
+                <input type="date" id="date-input">
+                <button id="search-btn">Buscar</button>
+            </div>
+        </div>
+
+        <div id="content-container">
+            <div id="main-data-card" class="data-card">
+                <p id="status-message" class="info-message">Selecione uma data (em dia útil) e clique em "Buscar"</p>
+            </div>
+            <div id="converter-card" class="data-card">
+                <h2>Conversor de Moedas</h2>
+                <input type="number" id="real-input" placeholder="Valor em BRL">
+                <p><strong>=</strong></p>
+                <input type="number" id="dolar-output" placeholder="Valor em USD" readonly>
+            </div>
+        </div>
+
+        <div id="graph-container">
+            <h2>Evolução Histórica</h2>
+            <p id="graph-title" class="info-message">O gráfico da evolução histórica aparecerá aqui.</p>
+            <canvas id="myChart"></canvas>
+        </div>
+    </main>
+
+    <footer>
+        <p>Dados fornecidos pela API do Banco Central do Brasil</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
