@@ -62,4 +62,4 @@ API de Indicadores Econômicos → Fonte dos dados utilizados na aplicação.
 
 # 🌐 Acesse o Aplicativo
 
-🔗 Clique aqui para acessar o site!
+🔗  **Acesse o aplicativo de música:** [Clique aqui para acessar!](https://indicador-brasil.onrender.com/)
