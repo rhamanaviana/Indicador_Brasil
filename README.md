@@ -17,32 +17,47 @@ O usuário pode selecionar datas específicas para análise, visualizar gráfico
 # 🎯 Objetivos
 
 ✅ Exibir cotações e indicadores econômicos atualizados em tempo real.
+
 ✅ Permitir a análise histórica por meio de gráficos interativos.
+
 ✅ Oferecer um conversor de moedas (Real ↔ Dólar).
+
 ✅ Disponibilizar uma navegação intuitiva entre as páginas de Dólar, Selic e IPCA.
+
 ✅ Garantir uma interface moderna e responsiva, adaptável a qualquer dispositivo.
 
 # 🛠️ Tecnologias Utilizadas
 
 HTML → Estrutura e organização dos componentes da página.
+
 CSS → Estilização e layout responsivo com foco em legibilidade e visual moderno.
+
 JavaScript → Lógica de atualização dos gráficos, integração com API e manipulação de dados.
+
 Chart.js → Renderização dos gráficos de evolução histórica.
+
 API de Indicadores Econômicos → Fonte dos dados utilizados na aplicação.
 
 # 📚 Funcionalidades Principais
 
 ✅ Dólar (USD): Exibe a cotação atual e o gráfico de evolução da moeda.
+
 ✅ Taxa Selic: Mostra a taxa básica de juros e sua variação ao longo do tempo.
+
 ✅ IPCA: Apresenta a taxa de inflação e o comportamento mensal do índice.
+
 ✅ Conversor de Moedas: Calcula valores entre Real e Dólar de forma instantânea.
+
 ✅ Seleção de Data: O usuário pode escolher o período que deseja visualizar no gráfico.
 
 # 🎨 Diferenciais do Projeto
 
 ✨ Interface Moderna: Visual limpo e harmônico, com cores suaves e layout intuitivo.
+
 ✨ Gráficos Dinâmicos: Atualizados automaticamente conforme o indicador selecionado.
+
 ✨ Código Estruturado: Componentes organizados para fácil manutenção e expansão.
+
 ✨ Interatividade: O usuário escolhe o indicador, a data e analisa os resultados em tempo real.
 
 # 🌐 Acesse o Aplicativo
